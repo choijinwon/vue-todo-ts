@@ -1,0 +1,94 @@
+body, h1 h2,p,ul{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;   
+}
+strong{
+    font-weight: normal;
+}
+
+body { 
+    background-color: #ddd;
+    color: #333;
+}
+
+
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.title{
+    margin-bottom: 40px;
+}
+
+.price {
+  display: flex;  
+  margin: 0 -20px;
+}
+
+.price-item{
+    background-color: white;
+    flex-basis: 33.33333333%;
+    margin: 0 20px;
+}
+
+.price-item-header,
+.price-item-footer {
+padding: 20px;
+text-align: center;
+}
+
+.price-item-header h2{
+    margin-bottom: 15px;
+}
+.price-item-content{
+    padding: 20px;
+    background-color: #efefef;
+}
+.price-item-footer{
+    margin-top: auto;
+}
+.list{
+    line-height: 1.4;
+}
+.list-item{
+    margin: 5px;
+    display: flex;
+
+}
+.list-item p span{
+    display: block;
+    color: #999;
+}
+.list-item-icon{
+    flex-shrink: 0;
+    margin-right: 0.4em;
+    margin-top: 2px;
+    fill: green;
+}
+.tag{
+    margin-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tag span {
+    font-size:0.5em;
+    margin: 0 0.2em;
+}
+.button{
+    background-color: dodgerblue;
+    color: white;
+    display: block;
+    padding: 20px 0;
+    transition: all .4s;
+    
+}
+.button:hover{
+    background-color: darkslateblue;
+}

@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/bin/node /Users/choejin-won/.yarn/bin/yarn.js add typescrupt
+
+PATH: 
+  /Users/choejin-won/.yarn/bin:/Users/choejin-won/.config/yarn/global/node_modules/.bin:/usr/local/php5/bin:~/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/choejin-won/.yarn/bin:/Users/choejin-won/.config/yarn/global/node_modules/.bin:/usr/local/php5/bin:~/.composer/vendor/bin:/Users/yeonsumoon/Downloads/platform-tools/:/Users/choejin-won/Library/Android/sdk/platform-tools/:/Users/yeonsumoon/Downloads/platform-tools/:/Users/yeonsumoon/Downloads/platform-tools/:/Users/choejin-won/Library/Android/sdk/platform-tools/
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typescrupt: Not found
+      at Request.params.callback [as _callback] (/Users/choejin-won/.yarn/lib/cli.js:66830:18)
+      at Request.self.callback (/Users/choejin-won/.yarn/lib/cli.js:140464:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (/Users/choejin-won/.yarn/lib/cli.js:141436:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (/Users/choejin-won/.yarn/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1183:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "test-ts",
+    "version": "1.0.0",
+    "main": "./bulid/index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
