@@ -9,6 +9,11 @@
         @input="updateText"
         @add="addTodoItems"
       ></TodoInput>
+      <div>
+        <ul>
+          <TodoListItem></TodoListItem>
+        </ul>
+      </div>
     </main>
   </div>
 </template>
@@ -16,6 +21,7 @@
 <script lang="ts">
 import Vue from "vue";
 import TodoInput from "./components/TodoInput.vue";
+import TodoListItem from "./components/TodoListItem.vue";
 
 const KEY_GEN = "v8_1111";
 const crud = {
@@ -30,7 +36,7 @@ const crud = {
   },
 };
 export default Vue.extend({
-  components: { TodoInput },
+  components: { TodoInput, TodoListItem },
   data() {
     return {
       textInput: "",
