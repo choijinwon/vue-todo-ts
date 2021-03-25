@@ -2,8 +2,10 @@
   <div>
     <header>
       <h1>타입스크립트 TodoList</h1>
-      <TodoInput :todoItem="textInput" @input="updateText"></TodoInput>
     </header>
+    <main>
+      <TodoInput :todoItem="textInput" @input="updateText"></TodoInput>
+    </main>
   </div>
 </template>
 
