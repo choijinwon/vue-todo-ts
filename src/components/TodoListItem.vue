@@ -1,6 +1,10 @@
 <template>
   <div>
-    <li>{{ itemList }}</li>
+    <li>
+      {{ index + 1 }} :
+      {{ itemList }}
+      <button type="button" @click="removeDlete">삭제</button>
+    </li>
   </div>
 </template>
 
@@ -14,6 +18,11 @@ export default Vue.extend({
     },
     index: {
       type: Number,
+    },
+  },
+  methods: {
+    removeDlete() {
+      this.$emit("remove");
     },
   },
 });
