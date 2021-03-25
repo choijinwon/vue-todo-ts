@@ -2,7 +2,7 @@
   <div>
     <header>
       <h1>타입스크립트 TodoList</h1>
-      <TodoInput :todoItem="textInput"></TodoInput>
+      <TodoInput :todoItem="textInput" @input="updateText"></TodoInput>
     </header>
   </div>
 </template>
@@ -17,6 +17,11 @@ export default Vue.extend({
     return {
       textInput: "",
     };
+  },
+  methods: {
+    updateText(value: string) {
+      this.textInput = value;
+    },
   },
 });
 </script>

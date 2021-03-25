@@ -16,8 +16,8 @@ export default Vue.extend({
     },
   },
   methods: {
-    handleEvent() {
-      console.log("클릭");
+    handleEvent(e: any) {
+      this.$emit("input", e.target.value);
     },
     addTodo() {
       console.log("클릭");
