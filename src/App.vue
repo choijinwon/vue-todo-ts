@@ -16,6 +16,7 @@
             :key="index"
             :index="index"
             :itemList="list"
+            @remove="removeDeltet"
           ></TodoListItem>
         </ul>
       </div>
@@ -66,6 +67,10 @@ export default Vue.extend({
     },
     fetchTodoItem() {
       crud.fetch();
+    },
+    removeDeltet(index: number) {
+      this.textItem.splice(index, 1);
+      crud.save(this.textItem);
     },
   },
   created() {
