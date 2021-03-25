@@ -20,7 +20,7 @@ export default Vue.extend({
       this.$emit("input", e.target.value);
     },
     addTodo() {
-      console.log("클릭");
+      this.$emit("add");
     },
   },
 });
