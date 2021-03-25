@@ -24,12 +24,17 @@ const crud = {
     const relust = JSON.parse(value);
     return relust;
   },
+  save(value: any) {
+    const todoItem = JSON.stringify(value);
+    localStorage.setItem(KEY_GEN, todoItem);
+  },
 };
 export default Vue.extend({
   components: { TodoInput },
   data() {
     return {
       textInput: "",
+      textItem: [] as any[],
     };
   },
   methods: {
@@ -38,8 +43,15 @@ export default Vue.extend({
     },
     addTodoItems() {
       const value = this.textInput;
-      //임시로 값 셋팅테스트
-      localStorage.setItem(value, value);
+      if (value == "") {
+        return false;
+      }
+      this.textItem.push(value);
+      crud.save(this.textItem);
+      this.initText();
+    },
+    initText() {
+      this.textInput = "";
     },
     fetchTodoItem() {
       crud.fetch();
