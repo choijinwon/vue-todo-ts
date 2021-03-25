@@ -1,13 +1,22 @@
 <template>
   <div>
-    <li>아이템 연동</li>
+    <li>{{ itemList }}</li>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({});
+export default Vue.extend({
+  props: {
+    itemList: {
+      type: String,
+    },
+    index: {
+      type: Number,
+    },
+  },
+});
 </script>
 
 <style scoped></style>
