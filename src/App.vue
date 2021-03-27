@@ -8,6 +8,7 @@
         :todoItem="textInput"
         @input="updateText"
         @add="addTodoItems"
+        @enter="keyupEnter"
       ></TodoInput>
       <div>
         <ul>
@@ -50,6 +51,9 @@ export default Vue.extend({
     };
   },
   methods: {
+    keyupEnter() {
+      this.addTodoItems();
+    },
     updateText(value: string) {
       this.textInput = value;
     },
